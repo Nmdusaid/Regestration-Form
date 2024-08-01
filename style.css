@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/img/132485-abstract-cool-purple-geometric-shapes-background-vector-image.jpg');
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.signup {
+    background: rgba(103, 101, 101, 0.4); /* Set background color to black with 40% opacity */
+    height: 60vh;
+    width: 37%;
+    border-radius: 10px; /* Fixed border-radius value */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Add box shadow */
+}
+.he {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+.heading {
+    color: white;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inp1, .inp2, .inp3 {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+}
+
+#text, #pass, #repass, #logbtn1, #logbtn2 {
+    height: 39px;
+    width: 45%;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 18px;
+    padding-left: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#pass, #repass {
+    height: 35px;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    align-items: center;
+    gap: 9px;
+    position: relative;
+    left: 10px;
+}
+
+#button, #sign, #btn3, #btn4 {
+    height: 39px;
+    border: none;
+    width: 18%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(54, 153, 239);
+    color: aliceblue;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    align-items: center;
+}
+
+.links p {
+    color: aliceblue;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.links a {
+    color: #1776f3;
+}
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+    .signup {
+        width: 90%; /* Adjust width to be a percentage for better responsiveness */
+    }
+}
+
+@media (max-width: 767px) {
+    .signup {
+        width: 80%; /* Adjust width to be a percentage for better responsiveness */
+    }
+}
+
+@media (max-width: 479px) {
+    .signup {
+        width: 100%; /* Full width for small screens */
+    }
+
+    #text, #pass, #repass, #logbtn1, #logbtn2 {
+        width: 90%; /* Adjust width to be a percentage for small screens */
+    }
+
+    #button, #sign, #btn3, #btn4 {
+        width: 25%; /* Adjust button width for small screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .signup {
+        padding: 10px; /* Add padding to prevent content from touching the edges */
+        width: 80%;
+    }
+
+    #text, #pass, #repass, #logbtn1, #logbtn2 {
+        width: 80%; /* Full width for very small screens */
+        font-size: 16px; /* Reduce font size for very small screens */
+    }
+   .links p{
+        font-size: 15px;
+    }
+
+    #button, #sign, #btn3, #btn4 {
+        height: 35px;
+        width: 30%; /* Adjust button width for very small screens */
+        font-size: 14px; /* Reduce font size for very small screens */
+    }
+}
